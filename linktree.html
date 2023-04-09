@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500&display=swap" rel="stylesheet">
+  <title>linktree</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-align: center;
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    .avatar{
+      background: url(https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg) no-repeat top center/cover;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      margin: 10px auto;
+      transition: width .3s, height .3s;
+    }
+    a{
+      display: block;
+      background-color: antiquewhite;
+      width: 80%;
+      margin: 10px auto;
+      padding: 10px;
+      color: darkolivegreen;
+      text-decoration: none;
+      border-radius: .3em;
+      box-shadow: 1.5px 1.5px 3px 0px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: width .3s, font-size .3s;
+    }
+    a:hover{
+      width: 90%;
+      font-size: 2em;
+    }
+    a:active{
+      background-color: rgb(253, 226, 190);
+    }
+    .avatar:hover{
+      width: 120px;
+      height: 120px;
+    }
+  </style>
+  
+</head>
+<body>
+  <div class="avatar"></div>
+  
+  <h1>Cat</h1>
+  <a href="">link1</a>
+  <a href="">link2</a>
+  <a href="">link3</a>
+  <a href="">link4</a>
+  <a href="">link5</a>
+</body>
+</html>
