@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
+
+    <style>
+       /* 全体のスタイル */
+        .swiper-wrapper {
+            width: 100%;
+            height: 250px;
+        }
+        /* 全スライド共通スタイル */
+        .swiper-slide {
+            color: #ffffff;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            line-height: 250px;
+        }
+        /* 4の倍数＋1枚目のスライドのスタイル（1枚目、5枚目…） */
+        .swiper-slide:nth-child(4n+1) {
+            background-color: #EECB27;
+        }
+        /* 4の倍数＋2枚目のスライドのスタイル（2枚目、6枚目…） */
+        .swiper-slide:nth-child(4n+2) {
+            background-color: #E13239;
+        }
+        /* 4の倍数＋3枚目のスライドのスタイル（3枚目、7枚目…） */
+        .swiper-slide:nth-child(4n+3) {
+            background-color: #1F1762;
+        }
+        /* 4の倍数＋4枚目のスライドのスタイル（4枚目、8枚目…） */
+        .swiper-slide:nth-child(4n+4) {
+            background-color: #BEDAE5;
+        }
+    </style>
+</head>
+<body>
+    <a href="http://twitter.com/share?count=horizontal&amp;original_referer=https://www.zpr.co.jp/index.html&amp;text=全農パールライス50周年記念企画&amp;url=https://www.zpr.co.jp/50th/special.html" class="twitter ev_sns" onclick="window.open(this.href, 'TWwindow', 'width=650, height=500, menubar=no, toolbar=no, scrollbars=yes'); return false;"><span><img src="../shared/images/general/common/icon_twitter.svg" alt=""></span> ツイート</a>
+    <br>
+    <a href="http://www.facebook.com/share.php?u=https://www.zpr.co.jp/50th/special.html" onclick="window.open(this.href, 'FBwindow', 'width=650, height=450, menubar=no, toolbar=no, scrollbars=yes'); return false;"><img src="/common/rwd/images/rn/icon_facebook.svg" width="32" height="32" alt="facebook"></a>
+    <br>
+    <input type="button" value="このページを印刷" onclick="window.print();">
+
+        <!-- Swiper START -->
+        <div class="swiper-container">
+            <!-- メイン表示部分 -->
+            <div class="swiper-wrapper">
+                <!-- 各スライド -->
+                <div class="swiper-slide">Slide 1</div>
+                <div class="swiper-slide">Slide 2</div>
+                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide">Slide 4</div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+        <!-- Swiper END -->
+
+
+
+        <script>
+            var mySwiper = new Swiper('.swiper-container', {
+                slidesPerView: 3,
+                loop: true,
+                speed: 500,
+                navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+            },
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                clickable: true
+            }
+            });
+            // // const swiper = new Swiper(".swiper", {});
+            // const swiper = new Swiper(".swiper", {
+            // slidesPerView: 3　/* この行を追加 */,
+            // // ページネーションが必要なら追加
+            // pagination: {
+            //     el: ".swiper-pagination"
+            // },
+
+            // // ナビボタンが必要なら追加
+            // navigation: {
+            //     nextEl: ".swiper-button-next",
+            //     prevEl: ".swiper-button-prev"
+            // }
+            // });
+        </script>
+
+</body>
+</html>
+
+
+<!-- 参考ページ：
+https://housefoods.jp/recipe/rcp_00014505.html
+
+https://www.nishishi.com/javascript-tips/window-print.html
+
+https://do.gt-gt.org/tweet-button/
+
+https://garigaricode.com/swiper/ -->
